@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEDHAVARDHAN | NATA 2025 Test Series</title>
+  <link rel="icon" type="image/png" href="Logo1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+
+    @font-face {
+      font-family: 'ExpletusSans[wght]';
+      src: url('font/ExpletusSans[wght].ttf') format('truetype');
+      }
+    @font-face {
+      font-family: 'Grosseto-Regular';
+      src: url('font/Grosseto-Regular.otf') format('truetype');
+     }
+     @font-face {
+      font-family: 'Chocolatte - TTF';
+      src: url('font/Chocolatte - TTF.ttf') format('truetype');
+     }
+
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      overflow-x: hidden;
+      background: #0b101a;
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 10px 10px;
+      background: #0b101a;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: #2d3e50;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar h1 {
+      font-size: 1.2rem;
+      color: #eefdf2;
+      margin: 0;
+      flex: 1 1 auto;
+    }
+
+    .navbar span {
+      margin-left: 4px;
+      font-size: 1rem;
+      color: #374151;
+    }
+
+    .hero-section {
+      background: linear-gradient(to right, #a7f3d0, #93c5fd);
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .test-title {
+      position: absolute;
+      top: 40px;
+      left: 10px;
+      color: #0b101a;
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      z-index: 10;
+    }
+
+    .tagline {
+      position: absolute;
+      top: 38px;
+      left: 120px;
+      padding-left: 110px;
+      letter-spacing: 1.5px;
+      color: #0b101a;
+      
+      font-family: 'ExpletusSans[wght]';
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+    }
+
+
+    .natalytics-text1 {
+      opacity: 30%;
+    }
+
+    .button-group {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      gap: 10px;
+    }
+
+    .hero-btn {
+      background: #0b101a;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .hero-btn:hover {
+      background: #065f46;
+      transform: scale(1.05);
+    }
+
+    .hero-content {
+      max-width: 100%;
+      word-wrap: break-word;
+      padding: 5px;
+      min-width: 160px;
+    }
+
+    .hero-content h2 {
+      font-size: clamp(1.2rem, 5vw, 2.5rem);
+      margin-bottom: 15px;
+      color: #2d3e50;
+      word-break: break-word;
+    }
+
+    .hero-content p {
+      font-size: clamp(0.9rem, 3.5vw, 1.2rem);
+      margin-bottom: 20px;
+      color: #374151;
+      font-family: 'Chocolatte - TTF';
+
+
+    }
+
+    .explore-btn {
+      background-color: #111827;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+      transition: background-color 0.3s, transform 0.3s;
+      display: inline-block;
+      font-size: 0.9rem;
+      max-width: 90%;
+      text-align: center;
+    }
+
+    .explore-btn:hover {
+      background-color: #065f46;
+      transform: scale(1.05);
+    }
+
+    .test-structure {
+      max-width: 700px;
+      width: 90%;
+      margin: 40px auto;
+      padding: 20px;
+      background: #1f2937;
+      border-radius: 8px;
+      box-shadow: 8px 8px 8px black;
+      text-align: center;
+      /* border: 2px dashed #22c55e; */
+      overflow-x: auto;
+      box-sizing: border-box;
+    }
+
+    .test-structure h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #728196;
+      font-family: 'Grosseto-Regular';
+    }
+
+    table {
+      width: 100%;
+      min-width: 300px;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: #374151;
+      color: #f3f4f6;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeIn 1s ease;
+    }
+
+    
+    td {
+      border: 1px solid #4b5563;
+      padding: 12px;
+      text-align: left;
+      
+      
+    }
+
+    th {
+      background: #0d1625;
+      color: white;
+      text-transform: uppercase;
+      
+    }
+
+    tr:nth-child(even) {
+      background: #4b5563;
+    }
+
+    ul {
+      text-align: left;
+      padding-left: 15px;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #9ca3af;
+    }
+
+    ul li strong,
+    .marks {
+      color: #22c55e;
+      opacity: 40%;
+    }
+
+    td:nth-child(3),
+    .marks-summary {
+      color: #585858;
+      font-weight: bold;
+    }
+
+    .marks-summary {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      animation: countUp 3s ease forwards;
+    }
+
+    .official-links {
+      background: #1f2937;
+      padding: 40px 20px;
+      text-align: center;
+      color: #f3f4f6;
+    }
+
+    .official-links h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .link-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .sumofmarks {
+      color: #585858;
+    }
+
+    .blue-btn,
+    .green-btn {
+      display: block;
+      padding: 12px;
+      border-radius: 12px;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      transition: background-color 0.3s, transform 0.3s;
+      background-size: 200% auto;
+      background-position: left center;
+      font-size: 0.9rem;
+    }
+
+    .blue-btn {
+      background-image: linear-gradient(to right, #2563eb 0%, #3b82f6 50%, #2563eb 100%);
+    }
+
+    .green-btn {
+      background-image: linear-gradient(to right, #047857 0%, #10b981 50%, #047857 100%);
+    }
+
+    .blue-btn:hover,
+    .green-btn:hover {
+      background-position: right center;
+      transform: scale(1.05);
+    }
+
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 999;
+      background: transparent;
+      color: white;
+      border: none;
+      outline: none;
+      padding: 14px 16px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      
+      display: none;
+      transition: transform 0.3s ease, opacity 0.3s;
+    }
+
+    #scrollToTopBtn:hover {
+      background:transparent;
+      transform: scale(1.1);
+    }
+
+    @keyframes countUp {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .natalytics-text {
+      display: inline-block;
+      transform: translateX(-100%);
+      animation: wipeIn 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+      white-space: nowrap;
+      font-family: 'ExpletusSans[wght]';
+    }
+    .mark200{
+      color: #22c55e;
+      
+    }
+    .colorfed{
+      opacity: 40%;
+    }
+    
+
+    .tagline-text {
+      display: inline-block;
+      transform: translateX(-30px);
+      opacity: 0;
+      animation: slideFromBack 1s ease-out forwards;
+      animation-delay: 0.1s;
+      position: relative;
+      top:-4px;
+      left:-30px;
+    }
+
+    @keyframes wipeIn {
+      to {
+        transform: translateX(0%);
+      }
+    }
+
+    @keyframes slideFromBack {
+      to {
+        transform: translateX(0px);
+        opacity: 1;
+      }
+    }
+
+    /*Media Queries for All Devices*/
+    @media (max-width: 1024px) {
+      .test-title {
+        flex-direction: column;
+        
+        top:20px;
+        left: 10px;
+        font-size: 1rem;
+      }
+      .tagline-text{
+        top:0px;
+        position: relative;
+        left:-7px
+      }
+
+      .tagline {
+        top: 70px;
+        left: 10px;
+        padding-left: 0;
+        font-size: 0.9rem;
+      }
+
+      .button-group {
+        flex-direction: column;
+        top: 120px;
+        right: 10px;
+        gap: 8px;
+        align-items: flex-end;
+      }
+
+      .hero-content h2 {
+        font-size: 1.6rem;
+      }
+
+      .hero-content p {
+        font-size: 25px;
+      }
+
+      .test-structure {
+        padding: 15px;
+      }
+
+      table th,
+      table td {
+        font-size: 0.85rem;
+        padding: 8px;
+      }
+
+      .explore-btn {
+        font-size: 0.85rem;
+      }
+
+      .link-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .blue-btn,
+      .green-btn {
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 400px){
+      .hero-content p {
+        font-size: 12.1px;
+      }
+    }
+
+    /*------------------------------------*/
+
+    /* === Hamburger Base Styles === */
+    #menu.hamburger {
+      display: none;
+      width: 40px;
+      height: 30px;
+      position: fixed;
+      top: 40px;
+      right: 10px;
+      z-index: 1101;
+      cursor: pointer;
+    }
+
+    .bar {
+      height: 4px;
+      width: 100%;
+      background: #0b101a;
+      margin: 10px auto;
+      transition: all 0.75s cubic-bezier(1, -1.5, 0.5, 2);
+      border-radius: 2px;
+    }
+
+    /* Animation when menu is open */
+    #menu.open .top-bar {
+      transform-origin: 40px;
+      transform: translateX(-4px) rotate(-45deg);
+      
+      
+    }
+
+    #menu.open .middle-bar {
+      opacity: 0;
+    }
+
+    #menu.open .bottom-bar {
+      transform-origin: 40px;
+      transform: translateX(-4px) rotate(45deg);
+      
+      
+      
+    }
+
+    /* Overlay */
+    .menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1100;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    /* Menu wrapper (hidden by default on mobile) */
+    .menu-wrapper {
+      display: block;
+    }
+
+    @media (max-width: 1024px) {
+      #menu.hamburger {
+        display: block;
+      }
+
+      .menu-wrapper .button-group {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 110px;
+        right: 10px;
+        padding: 14px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        z-index: 1102;
+        animation: slideIn 0.5s ease forwards;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+
+
+      /* .menu-wrapper .button-group {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 105px;
+        right: 10px;
+        background: transparent;
+        background-color: #0b101a;
+        padding: 14px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+        z-index: 1102;
+        animation: slideIn 0.5s ease forwards;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    } */
+
+      .menu-wrapper.active .button-group {
+        display: flex;
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .menu-overlay.active {
+        display: block;
+        opacity: 1;
+      }
+
+      .hero-btn {
+        flex: 1 1 auto;
+        min-width: 140px;
+        text-align: center;
+      }
+    }
+
+    /* Slide-in animation */
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <h1></h1><span>Test Series</span>
+  </div>
+
+  <div class="test-title">
+    <h1><span class="natalytics-text">NATALYTICS</span></h1>
+    <h1><span class="natalytics-text1">_______________</span></h1>
+    <div class="tagline"><span class="tagline-text">T E S T - S E R I E S</span></div>
+  </div>
+  <!-- Hamburger Button (moved to right) -->
+  <div id="menu" class="hamburger">
+    <div class="bar top-bar"></div>
+    <div class="bar middle-bar"></div>
+    <div class="bar bottom-bar"></div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- Button Group Wrapper -->
+  <div class="menu-wrapper">
+    <div class="button-group">
+      <a href="#" class="hero-btn">DASHBOARD</a>
+      <a href="#" class="hero-btn">MOCK TEST</a>
+      <a href="#" class="hero-btn">STUDY RESOURCES</a>
+      <a href="#" class="hero-btn">ANALYTICS</a>
+      <a href="#" class="hero-btn">LEADERBOARD</a>
+      <a href="#" class="hero-btn">DOUBT FORUM</a>
+    </div>
+  </div>
+
+
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h2>NATA 2025</h2>
+      <p>Experience Real Exam Conditions with Extreme Monitoring</p>
+      <a href="#test-structure" class="explore-btn">Explore Test Structure</a>
+    </div>
+  </section>
+
+  <button id="scrollToTopBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <section id="test-structure" class="test-structure">
+    <h2>Marking Scheme</h2>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="colorfed">Part</span></th>
+          <th><span class="colorfed">Details</span></th>
+          <th><span class="colorfed">Marks</span></th>
+          <th><span class="colorfed">Duration</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="colorfed">PART A</span></td>
+          <td><span class="colorfed">Drawing & Composition Test (Offline)</span></td>
+          <td><span class="mark200">80</td>
+          <td><span class="colorfed">90 Minutes</span></td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <ul>
+              <li><strong>A1:</strong> Composition & Color – <span class="marks">25 </span></li>
+              <li><strong>A2:</strong> Sketching & Composition (Black & White) – <span class="marks">25</span></li>
+              <li><strong>A3:</strong> 3D Composition – <span class="marks">30</span></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="colorfed">PART B</span></td>
+          <td><span class="colorfed">MCQ & NCQ Adaptive Test (Online)</span></td>
+          <td><span class="mark200">120</span></td>
+          <td><span class="colorfed">90 Minutes</span></td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <ul>
+              <li>42 Multiple Choice Questions (MCQ)</li>
+              <li>08 No Choice Questions (NCQ)</li>
+              <li>Visual Reasoning (2D/3D Understanding)</li>
+              <li>Logical Derivation & Analytical Thinking</li>
+              <li>G.K. – Architecture, Design, Current Affairs</li>
+              <li>English Language Interpretation & Grammar</li>
+              <li>Design Sensitivity, Critical Observation</li>
+              <li>Numerical Ability & Mathematical Creativity</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="marks-summary">
+      Total Marks: <span class="mark200">200</span> 
+    </div>
+  </section>
+
+  <section class="official-links">
+    <h2>Official NATA Resources</h2>
+    <div class="link-grid">
+      <a href="https://www.nata.in" target="_blank" class="blue-btn">Official NATA Website</a>
+      <a href="https://www.nata.in/nata2025v1-1.pdf" target="_blank" class="blue-btn">View NATA 2025 Brochure (PDF)</a>
+      <a href="https://stureg.nata-app.online/signup" target="_blank" class="green-btn">New Registration Portal</a>
+      <a href="https://stureg.nata-app.online/" target="_blank" class="green-btn">Result Portal</a>
+    </div>
+  </section>
+
+
+  <script>
+    const hamburger = document.getElementById("menu");
+    const menuWrapper = document.querySelector(".menu-wrapper");
+    const overlay = document.getElementById("menuOverlay");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("open");
+      menuWrapper.classList.toggle("active");
+      overlay.classList.toggle("active");
+    });
+
+    overlay.addEventListener("click", () => {
+      hamburger.classList.remove("open");
+      menuWrapper.classList.remove("active");
+      overlay.classList.remove("active");
+    });
+
+
+    let lastScrollTop = 0;
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        navbar.style.transform = "translateY(-100%)";
+      } else {
+        navbar.style.transform = "translateY(0)";
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+
+    document.querySelector(".explore-btn").addEventListener("click", function (e) {
+      e.preventDefault();
+      const section = document.querySelector("#test-structure");
+      const topPos = section.getBoundingClientRect().top + window.scrollY - 40;
+      window.scrollTo({ top: topPos, behavior: "smooth" });
+    });
+
+    const scrollBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", () => {
+      scrollBtn.style.display = window.pageYOffset > 300 ? "block" : "none";
+    });
+
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+
+
+
+  </script>
+
+
+</body>
+
+</html>
